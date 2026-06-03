@@ -1,1 +1,1 @@
-#My progress on Strivers Sheet
+My progress on Strivers Sheet
