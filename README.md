@@ -4,7 +4,7 @@ My solutions to the Striver A2Z DSA Sheet in C++.
 
 ## Progress
 
-* [ ] Basics
+* [x] Basics
 * [ ] Arrays
 * [ ] Binary Search
 * [ ] Strings
