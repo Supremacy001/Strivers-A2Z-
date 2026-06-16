@@ -26,12 +26,24 @@ void rightTriangle (int n) {
     
 }
 
-void numberTriangle (int n) {
+void JnumTriangle (int n) {
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= i; j++)
         {
             cout<<j<<" ";
+        }
+        cout<<endl;
+    }
+    
+}
+
+void InumTriangle (int n) {
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout<<i<<" ";
         }
         cout<<endl;
     }
@@ -46,7 +58,8 @@ int main(int argc, char const *argv[])
 
     cout<<"type 1 for square"<<endl;
     cout<<"type 2 for right triangle"<<endl;
-    cout<<"type 3 for number triangle"<<endl;
+    cout<<"type 3 for column number triangle"<<endl;
+    cout<<"type 4 for  row number triangle"<<endl;
     int input;
     cin>>input;
 
@@ -61,7 +74,11 @@ int main(int argc, char const *argv[])
         break;
 
     case 3:
-        numberTriangle(n);
+        JnumTriangle(n);
+        break;
+    
+    case 4:
+        InumTriangle(n);
         break;
 
     default:
