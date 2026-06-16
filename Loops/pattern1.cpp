@@ -26,6 +26,18 @@ void rightTriangle (int n) {
     
 }
 
+void numberTriangle (int n) {
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout<<j<<" ";
+        }
+        cout<<endl;
+    }
+    
+}
+
 int main(int argc, char const *argv[])
 {
     int n;
@@ -34,6 +46,7 @@ int main(int argc, char const *argv[])
 
     cout<<"type 1 for square"<<endl;
     cout<<"type 2 for right triangle"<<endl;
+    cout<<"type 3 for number triangle"<<endl;
     int input;
     cin>>input;
 
@@ -45,6 +58,10 @@ int main(int argc, char const *argv[])
     
     case 2:
         rightTriangle(n);
+        break;
+
+    case 3:
+        numberTriangle(n);
         break;
 
     default:

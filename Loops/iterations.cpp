@@ -5,7 +5,7 @@ int main() {
 
     int n;
 
-    cout<<"enter number of iterations: ";
+    cout<<"enter number of iterations: "<<endl;
     cin>>n;
 
     for (int i = 1; i <= n; i++) {
