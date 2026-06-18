@@ -27,6 +27,55 @@ void invertedNumTriangle (int n) {
     
 }
 
+void starpyramid(int n) {
+
+    for (int i = 0; i <n ; i++)
+    {
+        for (int j = 0; j <= n - i - 1; j++)
+        {
+            cout<<"  ";
+        }
+        for (int k = 0; k <= i; k++)
+        {
+            cout<<" *";
+        }
+        for (int m = 1; m <= i; m++)
+        {
+            cout<<" *";
+        }
+        cout<<endl;
+        
+        
+    }
+}
+
+void invertedstarpyramid (int n) {
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout<<"  ";
+        }
+        
+        for (int k = n; k >= i ; k--)
+        {
+            cout<<" *";
+
+        }
+        
+        for (int m = n-1; m >= i; m--)
+        {
+            cout<<" *";
+        }
+        
+        
+        cout<<endl;
+        
+        
+    }
+    
+}
+
 int main(int argc, char const *argv[])
 {
     int n;
@@ -35,6 +84,7 @@ int main(int argc, char const *argv[])
 
     cout<<"type 1 for inverted triangle"<<endl;
     cout<<"type 2 for inverted number triangle"<<endl;
+    cout<<"type 3 for star pyramid"<<endl;
     int input;
     cin>>input;
 
@@ -46,6 +96,14 @@ int main(int argc, char const *argv[])
 
     case 2:
         invertedNumTriangle(n);
+        break;
+
+    case 3: 
+        starpyramid(n);
+        break;
+
+    case 4:
+        invertedstarpyramid(n);
         break;
 
     default:
