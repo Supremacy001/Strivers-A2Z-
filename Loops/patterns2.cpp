@@ -86,7 +86,7 @@ int main(int argc, char const *argv[])
     cout<<"type 2 for inverted number triangle"<<endl;
     cout<<"type 3 for star pyramid"<<endl;
     cout<<"type 4 for inversted star pyramid"<<endl;
-    cout<<"type 5 for half diamond"<<endl;
+    cout<<"type 5 for asymmetrical diamond"<<endl;
     int input;
     cin>>input;
 
@@ -107,7 +107,11 @@ int main(int argc, char const *argv[])
     case 4:
         invertedstarpyramid(n);
         break;
-        
+    
+    case 5:
+        starpyramid(n);
+        invertedstarpyramid(n);
+
     default:
         break;
     }
