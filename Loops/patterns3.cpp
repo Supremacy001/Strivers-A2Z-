@@ -45,6 +45,25 @@ void assymetricaldiamond (int n) {
     
 }
 
+void binaryTriangle (int n) {
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            if ((i + j) % 2 == 0)
+            {
+                cout<<"1";
+            }
+            else {
+                cout<<"0";
+            }
+        }
+        cout<<endl;
+    }
+    
+}
+
 int main(int argc, char const *argv[])
 {
     int n;
@@ -54,7 +73,7 @@ int main(int argc, char const *argv[])
 
     cout<<"type 1 for half diamond"<<endl;
     cout<<"type 2 for assymetrical diamond"<<endl;
-    cout<<"type 3 for "<<endl;
+    cout<<"type 3 for binary trianle"<<endl;
     cout<<"type 4 for "<<endl;
     int input;
     cin>>input;
@@ -69,6 +88,8 @@ int main(int argc, char const *argv[])
         assymetricaldiamond(n);
         break;
 
+    case 3:
+        binaryTriangle(n);
 
     default:
         break;
