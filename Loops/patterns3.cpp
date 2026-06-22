@@ -47,7 +47,9 @@ void assymetricaldiamond (int n) {
 
 void binaryTriangle (int n) {
 
-    for (int i = 0; i < n; i++)
+    // My Original Solution
+
+    /*for (int i = 0; i < n; i++)
     {
         for (int j = 0; j <= i; j++)
         {
@@ -61,6 +63,30 @@ void binaryTriangle (int n) {
         }
         cout<<endl;
     }
+    */
+
+    //Strivers Sheet Solution\
+
+    for (int i = 0; i < n; i++)
+    {
+        int start;
+
+        if (i % 2 == 0)
+        {
+            start = 1;
+        }
+        else {
+            start = 0;
+        }
+
+        for (int j = 0; j <= i; j++)
+        {
+            cout<<start;
+            start = 1 - start;
+        }
+        cout<<endl;
+    }
+    
     
 }
 
