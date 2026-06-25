@@ -140,12 +140,15 @@ int main(int argc, char const *argv[])
 
     case 3:
         binaryTriangle(n);
+        break;
 
     case 4:
         numberCrown(n);
+        break;
 
     default:
         break;
     }
+    
     return 0;
 }
