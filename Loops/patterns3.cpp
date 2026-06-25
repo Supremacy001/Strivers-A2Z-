@@ -114,6 +114,18 @@ void numberCrown (int n) {
     
 }
 
+void increasingTriangle (int n) {
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            cout<<i + j;
+        }
+        cout<<endl;
+    }
+    
+}
 int main(int argc, char const *argv[])
 {
     int n;
@@ -124,7 +136,8 @@ int main(int argc, char const *argv[])
     cout<<"type 1 for half diamond"<<endl;
     cout<<"type 2 for assymetrical diamond"<<endl;
     cout<<"type 3 for binary trianle"<<endl;
-    cout<<"type 4 for number crown";
+    cout<<"type 4 for number crown"<<endl;
+    cout<<"type 5 for increasing triangle"<<endl;
     int input;
     cin>>input;
 
@@ -145,10 +158,14 @@ int main(int argc, char const *argv[])
     case 4:
         numberCrown(n);
         break;
+    
+    case 5:
+        increasingTriangle(n);
+        break;
 
     default:
         break;
     }
-    
+
     return 0;
 }
