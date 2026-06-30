@@ -26,6 +26,21 @@ void invletterTriangle (int n) {
     }
     
 }
+
+void alpharamp (int n) {
+
+    for (int i = 0; i < n; i++)
+    {
+        char ch = 'A' + i;
+        for (int j = 0; j <= i; j++)
+        {
+            cout<<ch;
+        }
+        cout<<endl;
+        
+    }
+    
+}
 int main(int argc, char const *argv[])
 {
     int n;
@@ -33,7 +48,7 @@ int main(int argc, char const *argv[])
     cin>>n;
 
     int input;
-    cout<<"type 1 for letter triangle"<<endl;
+    cout<<"type 1 for letter triangle"<<endl; 
     cout<<"type 2 for inverse letter triangle"<<endl;
 
     cin>>input;
@@ -46,6 +61,10 @@ int main(int argc, char const *argv[])
     
     case 2:
         invletterTriangle(n);
+        break;
+
+    case 3:
+        alpharamp(n);
         break;
 
     default:
