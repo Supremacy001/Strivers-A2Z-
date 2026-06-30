@@ -14,6 +14,18 @@ void letterTriangle (int n) {
     
 }
 
+void invletterTriangle (int n) {
+    
+    for (int i = 0; i < n; i++)
+    {
+        for (char ch = 'A' + n; ch >= 'A' ; ch--)
+        {
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+    }
+    
+}
 int main(int argc, char const *argv[])
 {
     int n;
@@ -22,6 +34,7 @@ int main(int argc, char const *argv[])
 
     int input;
     cout<<"type 1 for letter triangle"<<endl;
+    cout<<"type 2 for inverse letter triangle"<<endl;
 
     cin>>input;
 
@@ -31,6 +44,10 @@ int main(int argc, char const *argv[])
         letterTriangle(n);
         break;
     
+    case 2:
+        invletterTriangle(n);
+        break;
+
     default:
         break;
     }
