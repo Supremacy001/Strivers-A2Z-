@@ -41,6 +41,44 @@ void alpharamp (int n) {
     }
     
 }
+
+void alphahill (int n) {
+
+    for (int i = 0; i < n; i++)
+    {
+
+        //space
+
+        for (int space = n - 1; space > i ; space--)
+        {
+            cout<<"  ";
+        }
+
+        char ch = 'A';
+    
+        int breakpoint = (2*i+1) / 2;
+        
+        //characters
+
+        for (int j = 0; j < 2*i+1; j++)
+        {
+            
+            cout<<ch<<" ";
+
+            if (j >= breakpoint)
+            {
+                ch--;
+            }
+            else {
+                ch++;
+            }
+            
+        }
+
+        cout<<endl;
+    }    
+}
+
 int main(int argc, char const *argv[])
 {
     int n;
@@ -50,6 +88,8 @@ int main(int argc, char const *argv[])
     int input;
     cout<<"type 1 for letter triangle"<<endl; 
     cout<<"type 2 for inverse letter triangle"<<endl;
+    cout<<"type 3 for alpha ramp"<<endl;
+    cout<<"type 4 for alpha hill"<<endl;
 
     cin>>input;
 
@@ -65,6 +105,10 @@ int main(int argc, char const *argv[])
 
     case 3:
         alpharamp(n);
+        break;
+
+    case 4:
+        alphahill (n);
         break;
 
     default:
