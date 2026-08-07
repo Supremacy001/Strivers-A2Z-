@@ -3,25 +3,28 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    cout<<"enter a number: ";
-    int n, dup, store, rev = 0;
-    cin>>n;
-    dup = n;
+    cout << "enter a number: ";
+    int x, last, rev = 0;
+    cin>>x;
+    int dup = x;
 
-    while (n > 0)
+    if (x % 2 == 0)
     {
-        store = n % 10;
-        rev = rev*10 + store;
-        n = n/10;
-    }
-
-    if (dup == rev)
-    {
-        cout<<"true";
+        last = x % 10;
+        rev = rev * 10 + last;
+        x = x / 10;
     }
     else {
-        cout<<"false";
+
+        while (x )
+        {
+            /* code */
+        }
+        
     }
+    
+    
+    
     
     
     return 0;
