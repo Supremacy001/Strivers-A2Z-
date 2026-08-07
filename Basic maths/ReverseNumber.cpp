@@ -14,17 +14,21 @@ int main(int argc, char const *argv[])
 
         //positive overflow check
         if (rev > INT_MAX/10) {
+            cout << "overflow" << endl;
             return 0;
         }
         if (rev == INT_MAX/10 && last > 7) {
+            cout << "overflow" << endl;
             return 0;
         }
         //negative overflow check
         
         if (rev < INT_MIN/10) {
+            cout << "overflow" << endl;
             return 0;
         }
         if (rev == INT_MIN/10 && last < -8) {
+            cout << "overflow" << endl;
             return 0;
         }
         rev = rev*10 + last;
@@ -32,5 +36,7 @@ int main(int argc, char const *argv[])
             
     } 
 
-    return rev;
+    cout << rev << endl;
+
+    return 0;
 }
