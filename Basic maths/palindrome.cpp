@@ -8,24 +8,19 @@ int main(int argc, char const *argv[])
     cin>>x;
     int dup = x;
 
-    if (x % 2 == 0)
+    while (x > rev)
     {
         last = x % 10;
         rev = rev * 10 + last;
         x = x / 10;
     }
-    else {
 
-        while (x )
-        {
-            /* code */
-        }
-        
+    if (x == rev/10 || x == rev)
+    {
+        cout<<"palindrome";
+        return 0;
     }
-    
-    
-    
-    
-    
+  
+    cout<<"not palindrome";
     return 0;
 }
